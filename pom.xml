@@ -33,11 +33,11 @@
         <!-- Source: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
         <!-- Source: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-        <maven-surefire-plugin.version>3.5.5</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.5.6</maven-surefire-plugin.version>
         <!-- Source: https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-failsafe-plugin -->
-        <maven-failsafe-plugin.version>3.5.5</maven-failsafe-plugin.version>
+        <maven-failsafe-plugin.version>3.5.6</maven-failsafe-plugin.version>
         <!-- Source: https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
-        <sonar-maven-plugin.version>5.5.0.6356</sonar-maven-plugin.version>
+        <sonar-maven-plugin.version>5.7.0.6970</sonar-maven-plugin.version>
         <!-- Source: https://mvnrepository.com/artifact/com.google.cloud.tools/jib-maven-plugin -->
         <jib-maven-plugin.version>3.5.1</jib-maven-plugin.version>
 
@@ -47,7 +47,7 @@
         <!-- Source: https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
         <org.mapstruct.version>1.6.3</org.mapstruct.version>
         <!-- Source: https://mvnrepository.com/artifact/org.webjars/swagger-ui -->
-        <swagger-ui.version>5.32.5</swagger-ui.version>
+        <swagger-ui.version>5.32.6</swagger-ui.version>
         <!-- Source: https://mvnrepository.com/artifact/org.owasp.encoder/encoder -->
         <encoder.version>1.4.0</encoder.version>
         <!-- Source: https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
@@ -63,20 +63,20 @@
         <!-- Source: https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
         <commons-beanutils.version>1.11.0</commons-beanutils.version>
         <!-- Source: https://mvnrepository.com/artifact/com.google.guava/guava -->
-        <guava.version>33.5.0-jre</guava.version>
+        <guava.version>33.6.0-jre</guava.version>
         <!-- Source: https://mvnrepository.com/artifact/io.opentelemetry.instrumentation/opentelemetry-instrumentation-bom -->
-        <opentelemetry.version>2.27.0</opentelemetry.version>
+        <opentelemetry.version>2.28.1</opentelemetry.version>
         <!-- Source: https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-bom -->
-        <kotlin.version>2.3.20</kotlin.version>
+        <kotlin.version>2.3.21</kotlin.version>
 
         <!-- Companies House Internal Dependencies -->
-        <api-security-java.version>2.0.26</api-security-java.version>
-        <structured-logging.version>3.0.54</structured-logging.version>
-        <rest-service-common-library.version>2.0.11</rest-service-common-library.version>
+        <api-security-java.version>2.0.27</api-security-java.version>
+        <structured-logging.version>3.0.57</structured-logging.version>
+        <rest-service-common-library.version>2.0.14</rest-service-common-library.version>
         <api-helper-java-library.version>3.0.4</api-helper-java-library.version>
-        <private-api-sdk-java.version>5.0.0</private-api-sdk-java.version>
-        <api-sdk-manager-java-library.version>3.0.19</api-sdk-manager-java-library.version>
-        <api-sdk-java.version>6.6.16</api-sdk-java.version>
+        <private-api-sdk-java.version>6.0.23</private-api-sdk-java.version>
+        <api-sdk-manager-java-library.version>3.0.23</api-sdk-manager-java-library.version>
+        <api-sdk-java.version>6.6.23</api-sdk-java.version>
 
         <!-- Sonar Properties -->
         <!--suppress XmlUnresolvedReference -->
@@ -111,7 +111,7 @@
             <dependency>
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>
-                <version>4.34.1</version>
+                <version>4.35.0</version>
                 <scope>compile</scope>
             </dependency>
 
@@ -133,7 +133,7 @@
             <dependency>
                 <groupId>io.grpc</groupId>
                 <artifactId>grpc-context</artifactId>
-                <version>1.80.0</version>
+                <version>1.81.0</version>
             </dependency>
 
             <!-- Source: https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
@@ -146,7 +146,7 @@
             </dependency>
 
             <!-- Source: https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-core -->
-            <!-- Addresses https://www.cve.org/CVERecord?id=CVE-2026-41284 - ToDo - Can probably be removed after 03/06/2026 following Spring Boot 4.0.7 release          -->
+            <!-- Addresses https://www.cve.org/CVERecord?id=CVE-2026-41284 - Can probably be removed after 03/06/2026 following Spring Boot 4.0.7 release          -->
             <dependency>
                 <groupId>org.apache.tomcat.embed</groupId>
                 <artifactId>tomcat-embed-core</artifactId>
@@ -250,7 +250,7 @@
         <dependency>
             <groupId>io.opentelemetry.instrumentation</groupId>
             <artifactId>opentelemetry-logback-appender-1.0</artifactId>
-            <version>2.27.0-alpha</version>
+            <version>${opentelemetry.version}-alpha</version>
             <scope>compile</scope>
         </dependency>
 
